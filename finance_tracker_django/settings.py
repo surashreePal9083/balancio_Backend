@@ -76,14 +76,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'finance_tracker_django.wsgi.application'
 
-# Allow CORS from all origins (for development only)
-CORS_ALLOW_ALL_ORIGINS = True
+# Allow CORS from specific origins
+CORS_ALLOW_ALL_ORIGINS = False
 
-# Alternative: Specify allowed origins (more secure for production)
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:4200",
-#     "https://yourdomain.com",
-# ]
+# Specify allowed origins
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:4200",
+    "https://balancio-frontend.vercel.app",
+    "https://balancio-backend-two.vercel.app",
+]
 
 CORS_ALLOW_CREDENTIALS = True
 
