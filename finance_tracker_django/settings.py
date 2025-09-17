@@ -77,7 +77,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'finance_tracker_django.wsgi.application'
 
 # Allow CORS from specific origins
-CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Specify allowed origins
 CORS_ALLOWED_ORIGINS = [
