@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "finance_tracker_django/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "finance_tracker_django/wsgi.py"
+    }
+  ],
+  "functions": {
+    "finance_tracker_django/wsgi.py": {
+      "maxDuration": 30
+    }
+  }
+}
