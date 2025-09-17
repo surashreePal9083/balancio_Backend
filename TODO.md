@@ -1,0 +1,6 @@
+- [x] Update requirements.txt to add djangorestframework-simplejwt
+- [x] Update finance_tracker_django/settings.py: Add 'rest_framework_simplejwt' to INSTALLED_APPS and JWT to REST_FRAMEWORK auth classes
+- [x] Update tracker/views.py: Modify user_login view to generate and return JWT tokens, update response schema
+- [x] Install updated requirements with pip install -r requirements.txt
+- [x] Test login API to verify tokens are generated
+- [x] Fix CSRF error by removing SessionAuthentication, using JWT only
