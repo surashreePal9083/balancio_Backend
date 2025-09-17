@@ -18,10 +18,5 @@
       "src": "/(.*)",
       "dest": "finance_tracker_django/wsgi.py"
     }
-  ],
-  "functions": {
-    "finance_tracker_django/wsgi.py": {
-      "maxDuration": 30
-    }
-  }
+  ]
 }
