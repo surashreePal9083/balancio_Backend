@@ -114,13 +114,17 @@ CORS_ALLOW_METHODS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'balancio_Db',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'localhost',
+        'NAME': 'neondb',
+        'USER': 'neondb_owner',
+        'PASSWORD': 'npg_UwnScjkT7AR1',
+        'HOST': 'ep-steep-cloud-adx3aval-pooler.c-2.us-east-1.aws.neon.tech',
         'PORT': '5432',
+        'OPTIONS': {
+        'sslmode': 'require',
+        },
     }
 }
+
 
 
 # Password validation
